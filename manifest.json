@@ -1,0 +1,16 @@
+{
+    "name": "Facebook SidebarFixer",
+    "version": "0.3",
+    "icons": { 
+        "16": "icon_16.png",
+        "48": "icon_48.png",
+        "128": "icon_128.png" 
+    },
+    "description": "Fixes left sidebar on top and keeps it in field of view while scrolling.",
+    "content_scripts": [
+    {
+        "matches": ["*://*.facebook.com/*"], 
+        "js": ["jquery.js", "cs.js"]
+    }
+    ]
+}
